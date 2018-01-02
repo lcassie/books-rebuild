@@ -2,17 +2,37 @@
 // Variables
 // --------------------------------------------------
 
-// Bootstrap specific variables are located in bootstrap-customization.scss file
+// This file will include all variables, including Bootstrap override variables.
 
 // Base Colors
-$color-white: #fff;
-$color-dark-grey: #333;
-$color-light-grey: #999;
-$color-books-blue: #005581;
+$white: #fff;
+$black: #000;
+$dark-grey: #333;
+$light-grey: #999;
+$blue:    #005581;
+
+$primary: $blue !default;
+
  
-// Functional Variables
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
 
-
+$spacer: 1rem !default; /*16px*/
+$spacers: (
+  0: 0,
+  1: ($spacer * .25), 	/*4px*/
+  2: ($spacer * .5), 	/*8px*/
+  3: ($spacer * .75), 	/*12px*/
+  4: $spacer,			/*16px*/
+  5: ($spacer * 1.25),	/*20px*/
+  6: ($spacer * 1.5),	/*24px*/
+  7: ($spacer * 2),		/*32px*/
+  8: ($spacer * 2.5),	/*40px*/	
+  9: ($spacer * 3)		/*48px*/
+);
 
 
 
