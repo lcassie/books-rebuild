@@ -1,3 +1,14 @@
+// these need to be imported first to avoid errors in custom variables
+@import "../../bootstrap/scss/functions";
+@import "../../bootstrap/scss/mixins";
+
+//custom variables - this is a copy of variables.scss from bootstrap with custom adjustments
+@import "bootstrap/custom-variables";
+
+//Bootstrap 4.0.0-beta-2
+@import "../../bootstrap/scss/bootstrap";
+	
+//Custom styles
 // Sass utilities
 @import "helpers/variables";
 @import "helpers/mixins";
