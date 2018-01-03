@@ -4,6 +4,11 @@
 
 .books-header {
 	background-color: $blue;
+	& .search  {
+		& .input-group {
+			height: 34px;
+		}	
+	}
 	& .fa-shopping-cart {
 		color: $white;
 	}

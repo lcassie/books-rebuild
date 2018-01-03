@@ -7227,5 +7227,7 @@ a.text-dark:focus, a.text-dark:hover {
     border: 1px solid #ddd !important; } }
 .books-header {
   background-color: #005581; }
+  .books-header .search .input-group {
+    height: 34px; }
   .books-header .fa-shopping-cart {
     color: #fff; }
