@@ -7118,3 +7118,5 @@ a.text-dark:focus, a.text-dark:hover {
 
 .books-header {
   background-color: #005581; }
+  .books-header .fa-shopping-cart {
+    color: #fff; }

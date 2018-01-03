@@ -4,4 +4,7 @@
 
 .books-header {
 	background-color: $blue;
+	& .fa-shopping-cart {
+		color: $white;
+	}
 }
