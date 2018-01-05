@@ -7,10 +7,31 @@
 	& .search  {
 		& .input-group {
 			height: 34px;
-		}	
-	}
-	& .fa-shopping-cart {
-		color: $white;
+		}
+		& .btn.btn-outline-secondary {
+			background-color: $white;
+			color: $dark;
+			border-color: $light;
+			&:hover {
+				background-color: #0263ce;
+				border-color: #0263ce;
+				color: $white;
+			}
+		}
+		& .cart-btn a {
+			color: $white;
+			&:hover {
+				color: #0086b9;
+			}
+		}
+		& .mobile-search-btn {
+			background-color: transparent;
+			border: none;
+			color: #428bca;
+			&:hover {
+				color: $white;
+			}
+		}
 	}
 	& a .fa-facebook-square {
 		color: #3B5998;

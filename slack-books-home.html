@@ -24,14 +24,14 @@
     	</div>
     	 
     	<div class="row books-header">
-    		<div class="col-6">
-				<a href="/books" class="d-block pt-6 pt-md-8 pb-3 pb-md-4 px-1 px-md-3"> 
-      				<img alt="Slack Books" src="https://m1.healio.com/~/media/images/fscss/m1wyanokecdncom/37473c91a29fa58e472df9b56a4ea03b.png">
+    		<div class="col-8 col-md-6">
+				<a href="/books" class="d-block pt-7 pt-md-8 pb-4 px-1 px-md-3"> 
+      				<img class="img-fluid" alt="Slack Books" src="https://m1.healio.com/~/media/images/fscss/m1wyanokecdncom/37473c91a29fa58e472df9b56a4ea03b.png">
     			</a>
    			</div>
-    		<div class="col-6 col-md-4 align-self-end">
+    		<div class="col col-md-4 align-self-end">
     			<div class="row mb-3 mb-md-4 search">
-    				<div class="col-11">
+    				<div class="col-11 d-none d-md-block">
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Search" aria-label="Search" id="dtsearch">
 							<div class="input-group-append">
@@ -39,8 +39,24 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-1 align-self-center">
-						<a href="/shop/cart"><i class="fas fa-lg fa-shopping-cart"></i></a>
+					<div class="col d-block d-md-none">
+						<div class="dropdown show">
+							<!--removing class "dropdown-toggle" hides the caret -->
+							<button class="mobile-search-btn p-2 d-block" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-lg fa-search"></i>
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search" aria-label="Search" id="msearch">
+									<div class="input-group-append">
+										<button class="btn btn-outline-secondary px-2 py-1" type="button" onclick="(function(){var sp = '/books/search#q='; var q = $j('#msearch').val(); var f = '&amp;f:ContentTypeFacet=[Books]'; window.location.href=sp+q+f; })()"><i class="fas fa-lg fa-search"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col col-md-1 align-self-center cart-btn">
+						<a href="/shop/cart" class="p-2 d-block"><i class="fas fa-lg fa-shopping-cart"></i></a>
 					</div>
 				</div>
    			</div>
