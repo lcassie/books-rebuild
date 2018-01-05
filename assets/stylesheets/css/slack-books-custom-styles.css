@@ -8870,8 +8870,8 @@ a.text-dark:focus, a.text-dark:hover {
 
 .books-header .search .btn.btn-outline-secondary:hover {
   background-color: #0263ce;
-  border-color: #0263ce;
   color: #fff;
+  border-color: #cccccc;
 }
 
 .books-header .search .cart-btn a {
