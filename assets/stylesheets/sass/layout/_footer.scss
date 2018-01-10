@@ -75,35 +75,29 @@
 			}
 		}
 	}
-}
-.footer-columns {
-	padding: 30px 0 100px; /*extra bottom padding so blb ad doesn't overlap links*/
-	display: flex;
-}
-.footer-columns .footer-account-info {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
-	width: 25%;
-	margin: 0 20px;
-}
-#footer .list-unstyled {
-    margin: 0;
-    padding: 0;
-}
-#footer .list-unstyled li {
-    font-size: 14px;
-	margin-bottom: 5px;
-}
-#footer .footer-columns .list-unstyled li h5 {
-	font-size: 18px;
-    font-weight: bold;
-    margin: 0 0 8px;
-    padding: 0;
-    text-transform: none;
-    color: #767676;
-	line-height:1em;
-	white-space: nowrap;
+	& .footer-columns {
+		padding: 30px 0 100px; /*extra bottom padding so blb ad doesn't overlap links*/
+		& .footer-account-info {
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			margin: 0 20px;
+		}
+		& .list-unstyled li {
+			font-size: 0.875em;
+			margin-bottom: 0.375rem;
+			& h5 {
+				font-size: 1.125rem;
+				font-weight: bold;
+				margin: 0 0 8px;
+				padding: 0;
+				text-transform: none;
+				color: $gray-600;
+				line-height:1.25em;
+				white-space: nowrap;
+			}
+		}
+	}
 }
 #footer .last.saved {
     color: #767676!important;
