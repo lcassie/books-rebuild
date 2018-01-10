@@ -6,6 +6,7 @@
 	& a:visited {
 		color: $gray-600;
 		text-decoration: none;
+		display: block;
 	}
 	& a:hover,
 	& a:focus {
@@ -26,7 +27,6 @@
 			color: $gray-600;
 			line-height:1.25em;
 			white-space: nowrap;
-			align-self: center;
 		}
 		& .footer-social-group {
 			border-right: 1px solid $gray-600;
@@ -77,12 +77,6 @@
 	}
 	& .footer-columns {
 		padding: 30px 0 100px; /*extra bottom padding so blb ad doesn't overlap links*/
-		& .footer-account-info {
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: space-between;
-			margin: 0 20px;
-		}
 		& .list-unstyled li {
 			font-size: 0.875em;
 			margin-bottom: 0.375rem;
@@ -96,52 +90,22 @@
 				line-height:1.25em;
 				white-space: nowrap;
 			}
+			& .last.saved {
+				color: $gray-600;
+				&:hover {
+					color: #ee9c00;
+    				opacity: 1;
+				}
+			}
+		}
+		& .footer-copyright {
+			border-top: 1px solid $gray-300;
+			& p {
+				font-size: 0.75rem;
+				color: $gray-600;
+			}
 		}
 	}
-}
-#footer .last.saved {
-    color: #767676!important;
-}
-#footer .last.saved .fa-stack {
-    width: 1.8em;
-    height: 1.8em;
-    line-height: 1.8em;
-}
-#footer .last.saved .fa-stack-2x {
-    font-size: 1.8em;
-}
-#footer .saved .fa.fa-star {
-    color: #fff;
-    margin: 0;
-}
-#footer .saved:hover {
-    color: #ee9c00 !important;
-    opacity: 1;
-}
-#footer .saved:hover .fa.fa-star {
-    color: #fff;
-}
-#footer .footer-copyright {
-    margin-top: 15px;
-    padding-top: 0;
-    border-top: 1px solid #ccc;
-	align-self: baseline;
-}
-#footer .footer-copyright p {
-    font-size: 11px;
-    margin-top: 3px;
-	color: #767676;
-}
-.footer-columns .footer-healio-dot-com {
-	display: flex;
-	flex-flow: column nowrap;
-	width: 25%;
-	margin: 0 20px;
-}
-.footer-columns .footer-legal {
-	display: flex;
-	flex-flow: column nowrap;
-	margin: 0 20px;
 }
 
 
