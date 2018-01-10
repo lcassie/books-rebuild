@@ -100,7 +100,7 @@
 	</div>
 	<!-- /container -->
 
-	<!--footer-->
+	<!-- desktop footer-->
 	<div id="footer" class="d-none d-md-block m-0 p-0" data-module="Footer" data-isroot="1">
 		<div class="container-fluid">
 			 <div class="row top-footer-wrap">
@@ -200,7 +200,136 @@
 			</div>
 		</div>
 	</div>
-	<!-- /footer container -->
+	<!-- /desktop footer container -->
+   
+   <script>
+      $j(document).ready(function () {
+        var url = window.location.href;
+        var lseg = url.substr(url.lastIndexOf('/') + 1);
+
+        $j(".footer-panel-heading a span").addClass("fa fa-plus-square-o");
+
+        $j(".footer-panel-heading a").click(function () {
+          $j($j(this).prev().attr("href")).collapse("toggle");
+          toggleMenuIcons($j(this).find("span"), "fa fa-plus-square-o", "fa fa-minus-square-o");
+        });
+
+      });
+
+    </script>
+    
+    <!-- mobile footer-->
+    <div id="footerMobile" class="d-block d-md-none" data-module="Footer" data-isroot="1">
+      	<div class="container-fluid">
+        	<div class="row top-footer-wrap">
+          		<div class="top-footer-content">
+            		<div class="footer-social-group">
+              			<h5>Follow Healio</h5>
+              			<ul class="footer-social-links">
+							<li>
+							  	<a class="twitter" href="https://twitter.com/#!/GoHealio" target="_blank" data-external="true">
+									<i class="fa fa-lg fa-twitter"></i>
+							  	</a>
+							</li>
+							<li>
+							  	<a class="facebook" href="http://www.facebook.com/pages/Healio/304788272902541" target="_blank" data-external="true">
+									<i class="fa fa-lg fa-facebook"></i>
+							  	</a>
+							</li>
+							<li>
+							  	<a class="linkedin" href="http://www.linkedin.com/company/healio" target="_blank" data-external="true">
+									<i class="fa fa-lg fa-linkedin"></i>
+							  	</a>
+							</li>
+							<li>
+							  	<a class="rssfeed" href="https://www.healio.com/rss">
+									<i class="fa fa-lg fa-rss"></i>
+							  	</a>
+							</li>
+						</ul>
+					</div>
+
+            		<div class="footer-feedback">
+              			<p><a class="healio-survey" href="https://www.healio.com/footer/hidden/survey"><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;Tell us what you think about Healio.com&nbsp;»</a></p>
+            		</div>
+          		</div>
+        	</div>
+      	</div>
+
+      	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        	<div class="panel panel-default">
+          		<div class="panel-heading footer-panel-heading" role="tab" id="headingOne">
+            		<h4 class="panel-title">
+              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Account Information<span class="pdsa-panel-toggle fa fa-plus-square-o"></span></a>
+            		</h4>
+          		</div>
+          		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            		<div class="panel-body">
+              			<ul data-module="Account Information" class="list-unstyled">
+							<li><a id="ctl00_SavedMobile" class="last saved" rel="nofollow" onclick="" href="https://www.healio.com/footer/account-information/my-account/my-saved-pages"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-star fa-stack-1x fa-inverse"></i></span> My Saved</a></li>
+							<li id="mfWebsiteRegistration" style="display: none;"><a rel="nofollow" onclick="$j.get('/utilityapp/json/na/ce/healiotwo/{ACC50322-FB7D-42FC-940E-84BDDAD3B84D}',function (data){$j('body').append(data);})" href="javascript:void(0);" data-external="true">Website Registration</a></li>
+							<li id="mfWebsiteLogin" style="display: none;"><a rel="nofollow" onclick="$j.get('/utilityapp/json/na/li/healiotwo/{ACC50322-FB7D-42FC-940E-84BDDAD3B84D}',function (data){$j('body').append(data);})" href="javascript:void(0);" data-external="true">Login</a></li>
+							<li id="mfWebsiteLogout" style=""><a rel="nofollow" href="/?logout=0">Log Out</a></li>
+							<li><a href="/footer/account-information/update-publication-mailing-address">Update Publication Mailing Address</a></li>
+							<li><a href="/subscribe">Subscribe Or Buy</a></li>
+							<li><a href="/footer/account-information/my-account">My Account</a></li>
+							<li><a href="http://www.healio.com/footer/account-information/my-account/newswires">enewsletter Alerts</a></li>
+							<li><a href="/footer/account-information/help">Help</a></li>
+              			</ul>
+            		</div>
+          		</div>
+        	</div>
+
+        	<div class="panel panel-default">
+          		<div class="panel-heading footer-panel-heading" role="tab" id="headingTwo">
+            		<h4 class="panel-title">
+              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Healio.com<span class="pdsa-panel-toggle fa fa-plus-square-o"></span></a>
+            		</h4>
+          		</div>
+          		<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            		<div class="panel-body">
+              			<ul data-module="Healio.com" class="list-unstyled">
+							<li><a href="/footer/healio-dot-com/about-healio">About Healio</a></li>
+							<li><a href="/footer/healio-dot-com/healio-network">The Healio Network</a></li>
+							<li><a href="/footer/healio-dot-com/publications">Publications</a></li>
+							<li><a href="/footer/healio-dot-com/contact-the-news-desk">Contact the News Desk</a></li>
+							<li><a href="/footer/healio-dot-com/contact-us">Contact Us</a></li>
+							<li><a href="/footer/healio-dot-com/about-the-wyanoke-group">About the Wyanoke Group</a></li>
+							<li><a href="http://www.healiojobs.com" data-external="true">Healio Jobs</a></li>
+							<li><a href="/footer/healio-dot-com/advertising-information">Advertising Information</a></li>
+							<li><a href="http://www.wrightsmedia.com/reprints/index.cfm?magid=3699" data-external="true">Reprints</a></li>
+							<li><a href="/news/institution-news">Institution News</a></li>
+							<li><a href="/footer/healio-dot-com/sitemap">Sitemap</a></li>
+              			</ul>
+            		</div>
+          		</div>
+        	</div>
+
+        	<div class="panel panel-default">
+          		<div class="panel-heading footer-panel-heading" role="tab" id="headingThree">
+            		<h4 class="panel-title">
+              			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Legal<span class="pdsa-panel-toggle fa fa-plus-square-o"></span></a>
+            		</h4>
+          		</div>
+          		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            		<div class="panel-body">
+              			<ul data-module="Legal" class="list-unstyled">                
+							<li><a href="/footer/legal/medical-disclaimer">Medical Disclaimer</a></li>
+							<li><a href="/footer/legal/privacy-policy">Privacy Policy</a></li>
+							<li><a href="/footer/legal/editorial-policy-and-philosophy">Editorial Policy and Philosophy</a></li>
+							<li><a href="/footer/legal/terms-and-conditions">Terms and Conditions</a></li>
+							<li><a href="/footer/legal/permissions">Permissions</a></li>
+              			</ul>
+            		</div>
+          		</div>
+        	</div>
+      	</div>
+
+      	<div class="footer-copyright">
+        	<p>&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Healio All Rights Reserved.</p>
+      	</div>
+    </div>
+    <!-- /mobile footer container -->
     
 
     <!-- Optional JavaScript -->
