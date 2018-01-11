@@ -29,7 +29,11 @@
 			white-space: nowrap;
 		}
 		& .footer-social-group {
-			border-right: 1px solid $gray-600;
+			border-bottom: 1px solid $gray-300;
+			@include media-breakpoint-up(md) {
+				border-right: 1px solid $gray-600;
+				border-bottom: none;
+			}
 			& ul.footer-social-links {
 				list-style: none;
 				& li {
@@ -63,7 +67,9 @@
 			}
 		}
 		& .footer-feedback {
-			border-right: 1px solid $gray-600;
+			@include media-breakpoint-up(md) {
+				border-right: 1px solid $gray-600;
+			}
 			& a.healio-survey:hover .fa-check-square {
 				color: #589b3c;
 			}
