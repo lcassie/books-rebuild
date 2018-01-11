@@ -10,6 +10,7 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>		
 	<!-- compiled custom styles - this includes Bootstrap 4.0-beta2 -->
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/css/slack-books-custom-styles.css">
+	<script type="text/javascript">$j = $.noConflict();</script>
 </head>
 <body class="books-home">
     
@@ -206,11 +207,11 @@
 				var url = window.location.href;
 				var lseg = url.substr(url.lastIndexOf('/') + 1);
 
-				$j(".footer-panel-heading a span").addClass("fa fa-plus-square-o");
+				$j(".footer-card-heading a i").addClass("far fa-plus-square");
 
-				$j(".footer-panel-heading a").click(function () {
+				$j(".footer-card-heading a").click(function () {
 				  $j($j(this).prev().attr("href")).collapse("toggle");
-				  toggleMenuIcons($j(this).find("span"), "fa fa-plus-square-o", "fa fa-minus-square-o");
+				  toggleMenuIcons($j(this).find("i"), "far fa-plus-square", "far fa-minus-square");
 				});
 
 			  });
@@ -219,78 +220,87 @@
 			
 			<!-- mobile footer columns -->
 			<div class="row footer-panels d-md-none">
-       			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        			<div class="panel panel-default">
-						<div class="panel-heading footer-panel-heading" role="tab" id="headingOne">
-							<h4 class="panel-title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Account Information<span class="pdsa-panel-toggle fa fa-plus-square-o"></span></a>
-							</h4>
-						</div>
-						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-							<div class="panel-body">
-								<ul data-module="Account Information" class="list-unstyled">
-									<li><a id="ctl00_SavedMobile" class="last saved" rel="nofollow" onclick="" href="https://www.healio.com/footer/account-information/my-account/my-saved-pages"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-star fa-stack-1x fa-inverse"></i></span> My Saved</a></li>
-									<li id="mfWebsiteRegistration" style="display: none;"><a rel="nofollow" onclick="$j.get('/utilityapp/json/na/ce/healiotwo/{ACC50322-FB7D-42FC-940E-84BDDAD3B84D}',function (data){$j('body').append(data);})" href="javascript:void(0);" data-external="true">Website Registration</a></li>
-									<li id="mfWebsiteLogin" style="display: none;"><a rel="nofollow" onclick="$j.get('/utilityapp/json/na/li/healiotwo/{ACC50322-FB7D-42FC-940E-84BDDAD3B84D}',function (data){$j('body').append(data);})" href="javascript:void(0);" data-external="true">Login</a></li>
-									<li id="mfWebsiteLogout" style=""><a rel="nofollow" href="/?logout=0">Log Out</a></li>
-									<li><a href="/footer/account-information/update-publication-mailing-address">Update Publication Mailing Address</a></li>
-									<li><a href="/subscribe">Subscribe Or Buy</a></li>
-									<li><a href="/footer/account-information/my-account">My Account</a></li>
-									<li><a href="http://www.healio.com/footer/account-information/my-account/newswires">enewsletter Alerts</a></li>
-									<li><a href="/footer/account-information/help">Help</a></li>
-								</ul>
+      			<div class="col">
+      				<div id="accordion" role="tablist">
+						<div class="card">
+							<div class="card-header footer-card-heading" role="tab" id="headingOne">
+								<h5 class="mb-0">
+									<a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+						  				Account Information <i class="far fa-plus-square"></i>
+									</a>
+								</h5>
+							</div>
+
+							<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									<ul data-module="Account Information" class="list-unstyled">
+										<li><a id="ctl00_SavedMobile" class="last saved" rel="nofollow" onclick="" href="https://www.healio.com/footer/account-information/my-account/my-saved-pages"><div class="fa-2x d-inline"><span class="fa-layers fa-fw"><i class="fas fa-circle"></i><i class="fas fa-star fa-inverse" data-fa-transform="shrink-6"></i></span></div>&nbsp;My Saved</a></li>
+										<li id="mfWebsiteRegistration" style="display: none;"><a rel="nofollow" onclick="$j.get('/utilityapp/json/na/ce/healiotwo/{ACC50322-FB7D-42FC-940E-84BDDAD3B84D}',function (data){$j('body').append(data);})" href="javascript:void(0);" data-external="true">Website Registration</a></li>
+										<li id="mfWebsiteLogin" style="display: none;"><a rel="nofollow" onclick="$j.get('/utilityapp/json/na/li/healiotwo/{ACC50322-FB7D-42FC-940E-84BDDAD3B84D}',function (data){$j('body').append(data);})" href="javascript:void(0);" data-external="true">Login</a></li>
+										<li id="mfWebsiteLogout" style=""><a rel="nofollow" href="/?logout=0">Log Out</a></li>
+										<li><a href="/footer/account-information/update-publication-mailing-address">Update Publication Mailing Address</a></li>
+										<li><a href="/subscribe">Subscribe Or Buy</a></li>
+										<li><a href="/footer/account-information/my-account">My Account</a></li>
+										<li><a href="http://www.healio.com/footer/account-information/my-account/newswires">enewsletter Alerts</a></li>
+										<li><a href="/footer/account-information/help">Help</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
-        			</div>
-
-					<div class="panel panel-default">
-						<div class="panel-heading footer-panel-heading" role="tab" id="headingTwo">
-							<h4 class="panel-title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Healio.com<span class="pdsa-panel-toggle fa fa-plus-square-o"></span></a>
-							</h4>
+						
+						<div class="card">
+							<div class="card-header footer-card-heading" role="tab" id="headingTwo">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+									  Healio.com <i class="far fa-plus-square"></i>
+									</a>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body">
+									<ul data-module="Healio.com" class="list-unstyled">
+										<li><a href="/footer/healio-dot-com/about-healio">About Healio</a></li>
+										<li><a href="/footer/healio-dot-com/healio-network">The Healio Network</a></li>
+										<li><a href="/footer/healio-dot-com/publications">Publications</a></li>
+										<li><a href="/footer/healio-dot-com/contact-the-news-desk">Contact the News Desk</a></li>
+										<li><a href="/footer/healio-dot-com/contact-us">Contact Us</a></li>
+										<li><a href="/footer/healio-dot-com/about-the-wyanoke-group">About the Wyanoke Group</a></li>
+										<li><a href="http://www.healiojobs.com" data-external="true">Healio Jobs</a></li>
+										<li><a href="/footer/healio-dot-com/advertising-information">Advertising Information</a></li>
+										<li><a href="http://www.wrightsmedia.com/reprints/index.cfm?magid=3699" data-external="true">Reprints</a></li>
+										<li><a href="/news/institution-news">Institution News</a></li>
+										<li><a href="/footer/healio-dot-com/sitemap">Sitemap</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-							<div class="panel-body">
-								<ul data-module="Healio.com" class="list-unstyled">
-									<li><a href="/footer/healio-dot-com/about-healio">About Healio</a></li>
-									<li><a href="/footer/healio-dot-com/healio-network">The Healio Network</a></li>
-									<li><a href="/footer/healio-dot-com/publications">Publications</a></li>
-									<li><a href="/footer/healio-dot-com/contact-the-news-desk">Contact the News Desk</a></li>
-									<li><a href="/footer/healio-dot-com/contact-us">Contact Us</a></li>
-									<li><a href="/footer/healio-dot-com/about-the-wyanoke-group">About the Wyanoke Group</a></li>
-									<li><a href="http://www.healiojobs.com" data-external="true">Healio Jobs</a></li>
-									<li><a href="/footer/healio-dot-com/advertising-information">Advertising Information</a></li>
-									<li><a href="http://www.wrightsmedia.com/reprints/index.cfm?magid=3699" data-external="true">Reprints</a></li>
-									<li><a href="/news/institution-news">Institution News</a></li>
-									<li><a href="/footer/healio-dot-com/sitemap">Sitemap</a></li>
-								</ul>
+						
+						<div class="card">
+							<div class="card-header footer-card-heading" role="tab" id="headingThree">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+									  Legal <i class="far fa-plus-square"></i>
+									</a>
+								</h5>
+							</div>
+							<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+								<div class="card-body">
+									<ul data-module="Legal" class="list-unstyled">                
+										<li><a href="/footer/legal/medical-disclaimer">Medical Disclaimer</a></li>
+										<li><a href="/footer/legal/privacy-policy">Privacy Policy</a></li>
+										<li><a href="/footer/legal/editorial-policy-and-philosophy">Editorial Policy and Philosophy</a></li>
+										<li><a href="/footer/legal/terms-and-conditions">Terms and Conditions</a></li>
+										<li><a href="/footer/legal/permissions">Permissions</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="panel panel-default">
-						<div class="panel-heading footer-panel-heading" role="tab" id="headingThree">
-							<h4 class="panel-title">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Legal<span class="pdsa-panel-toggle fa fa-plus-square-o"></span></a>
-							</h4>
-						</div>
-						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-							<div class="panel-body">
-								<ul data-module="Legal" class="list-unstyled">                
-									<li><a href="/footer/legal/medical-disclaimer">Medical Disclaimer</a></li>
-									<li><a href="/footer/legal/privacy-policy">Privacy Policy</a></li>
-									<li><a href="/footer/legal/editorial-policy-and-philosophy">Editorial Policy and Philosophy</a></li>
-									<li><a href="/footer/legal/terms-and-conditions">Terms and Conditions</a></li>
-									<li><a href="/footer/legal/permissions">Permissions</a></li>
-								</ul>
-							</div>
-						</div>
+					<div class="footer-copyright">
+						<p>&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Healio All Rights Reserved.</p>
 					</div>
       			</div>
-				<div class="footer-copyright">
-					<p>&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Healio All Rights Reserved.</p>
-				</div>
-     		</div>
+			</div>
       		<!-- /mobile footer columns -->
 		</div>
 	</div>
