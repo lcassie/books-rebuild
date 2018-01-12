@@ -2243,7 +2243,7 @@ tbody.collapse.show {
   .dropdown-item:focus, .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    background-color: #ededed; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
@@ -3442,7 +3442,7 @@ tbody.collapse.show {
   .list-group-item-action:focus, .list-group-item-action:hover {
     color: #495057;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    background-color: #ededed; }
   .list-group-item-action:active {
     color: #212529;
     background-color: #dfdfdf; }
@@ -7334,80 +7334,39 @@ a.text-dark:focus, a.text-dark:hover {
       #footer .footer-columns .footer-copyright p {
         font-size: 0.75rem;
         color: #767676; }
-
-@media only screen and (max-width: 767px) {
-  #footerMobile.mobile-view #accordion {
-    margin-right: 0;
-    padding-right: 0; }
-
-  #footerMobile.mobile-view .panel-group {
-    margin-bottom: 0; }
-
-  #footerMobile.mobile-view .panel-default {
-    border-bottom: 1px solid #c0c0c0;
-    border-top: medium none; }
-
-  #footerMobile.mobile-view .panel-group .panel + .panel {
-    margin-top: 0; }
-
-  #footerMobile.mobile-view .panel-group .panel {
-    border-radius: 0;
-    margin-bottom: 0; }
-
-  #footerMobile.mobile-view .panel {
-    box-shadow: none; }
-
-  #footerMobile.mobile-view .panel-heading {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    padding: 0; }
-
-  #footerMobile.mobile-view .panel > .panel-heading > .panel-title > a {
-    color: #767676 !important;
-    display: block;
-    font-size: 18px;
-    padding: 10px 15px;
-    text-decoration: none;
-    text-transform: none;
-    background: #ededed; }
-
-  #footerMobile.mobile-view a {
+  #footer .footer-cards .card {
+    border: none;
+    background-color: #ededed;
+    border-radius: 0; }
+    #footer .footer-cards .card .card-header {
+      padding: 0;
+      margin-bottom: 0;
+      background-color: #ededed;
+      border-bottom: 1px solid #c0c0c0; }
+      #footer .footer-cards .card .card-header:first-child {
+        border-radius: 0; }
+      #footer .footer-cards .card .card-header h5 {
+        font-size: 1.125rem;
+        font-weight: bold; }
+        #footer .footer-cards .card .card-header h5 a {
+          color: #767676;
+          padding: 0.625rem 1rem;
+          display: flex;
+          justify-content: space-between; }
+          #footer .footer-cards .card .card-header h5 a .fa-plus-square, #footer .footer-cards .card .card-header h5 a .fa-minus-square {
+            font-weight: normal;
+            font-size: 0.875rem; }
+    #footer .footer-cards .card .card-body {
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #c0c0c0; }
+      #footer .footer-cards .card .card-body ul.list-unstyled {
+        margin-bottom: 0; }
+        #footer .footer-cards .card .card-body ul.list-unstyled li {
+          margin-bottom: 0.375rem; }
+          #footer .footer-cards .card .card-body ul.list-unstyled li a {
+            font-size: 0.875rem;
+            color: #767676;
+            opacity: 1; }
+  #footer .footer-cards .footer-copyright p {
     color: #767676;
-    display: block; }
-
-  #footerMobile.mobile-view .pdsa-panel-toggle {
-    float: right;
-    cursor: pointer;
-    color: #767676;
-    font-size: 14px;
-    position: relative;
-    top: 3px; }
-
-  #footerMobile.mobile-view .panel-body {
-    background: #ededed;
-    padding-top: 0;
-    border-top: none; }
-
-  #footerMobile.mobile-view .list-unstyled {
-    margin: 0 20px 0 0;
-    padding: 0; }
-
-  #footerMobile .saved {
-    color: #767676 !important;
-    margin-left: -8px !important; }
-
-  #footerMobile .last.saved {
-    left: 0;
-    position: relative; }
-
-  #footerMobile .footer-copyright {
-    border-top: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0;
-    text-align: center; }
-
-  #footerMobile .footer-copyright p {
-    font-size: 11px;
-    margin-top: 0;
-    color: #767676; } }
+    font-size: 0.75rem; }
