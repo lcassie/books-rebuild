@@ -2,3 +2,37 @@
 // Navigation
 // --------------------------------------------------
 
+.books-sidebar-nav {
+    margin-left: -15px; /*counters the padding on col*/
+    padding: 0.5rem 0;
+    & li.nav-item {
+        & > a.nav-link {
+            padding: 2px 3px;
+            color: $blue;
+            font-size: 0.75rem;
+            font-weight: normal;
+            background-color: $white;
+            display: block;
+            &:hover,
+            &:focus {
+                background-color: #e3e3e3;
+                color: $blue;
+            }
+        }
+    }
+    & li.nav-category {
+        background-color: $gray-700;
+        color: $white;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 5px;
+        margin-top: 10px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    & .nav-divider {
+        border-top: 2px solid $gray-300;
+    }
+}
