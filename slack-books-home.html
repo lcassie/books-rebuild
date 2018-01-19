@@ -82,10 +82,61 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-3">
-				left nav bar
+			<div class="col-md-3 d-none d-md-flex">
+				<nav class="navbar navbar-expand-md books-sidebar-nav" role="navigation">
+					<!-- removed navbar-brand and toggler because we are hiding this on mobile and mobile menu is separate -->
+					<ul class="nav navbar-nav flex-column">
+						<li class="nav-category nav-item">Medicine</li>
+						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/gastroenterology">Gastroenterology</a></li>
+						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/ophthalmology">Ophthalmology</a></li>
+						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/ophthalmic-technical-skills" class="indented">Ophthalmic Technical Skills</a></li>
+						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/orthopedics">Orthopedics</a></li>
+						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/hepatology">Hepatology</a></li>
+						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/pediatrics">Pediatrics</a></li>
+				  
+						<li class="nav-category nav-item">Health Professions</li>
+						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/athletic-training">Athletic Training</a></li>
+						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/health-professions/occupational-therapy">Occupational Therapy</a></li>
+						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/health-professions/occupational-therapy-assistant" class="indented">Occupational Therapy Assistant</a></li>
+						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/health-professions/physical-therapy">Physical Therapy</a></li>
+						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/health-professions/physical-therapist-assistant" class="indented">Physical Therapist Assistant</a></li>
+						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/speech-language-pathology">Speech-Language Pathology</a></li>
+				  
+						<li class="nav-category nav-item">Nursing</li>
+						<li class="nav-item" data-module="Nursing"><a class="nav-link" href="/books/nursing">Clinical Nursing Skills</a></li>
+				  
+						<li class="nav-category nav-item">Additional Medical Specialties</li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/adolescent-medicine">Adolescent Medicine</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/aesthetics">Aesthetics</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/allergy-immunology">Allergy/Immunology</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/cardiac-vascular-intervention">Cardiac/Vascular Intervention</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/cardiology">Cardiology</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/dermatology">Dermatology</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/endocrinology">Endocrinology</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/family-medicine">Family Medicine</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/geriatric-medicine">Geriatric Medicine</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/hematology">Hematology</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/infectious-disease">Infectious Disease</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/internal-medicine">Internal Medicine</a></li>
+						<li data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/optometry">Optometry</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/orthotics-prosthetics">Orthotics/Prosthetics</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/psychiatry">Psychiatry</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/rheumatology">Rheumatology</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/spine-surgery">Spine Surgery</a></li>
+						<li class="nav-item" data-module="Additional Medical Specialties"><a class="nav-link" href="/books/additional-medical-specialties/sports-medicine">Sports Medicine</a></li>
+					
+						<hr class="nav-divider">
+						<li class="nav-item" data-module="Additional Items"><a class="nav-link" href="/footer/account-information/my-account/newswires?books=1">New Book Title Alerts</a></li>
+						<li class="nav-item" data-module="Additional Items"><a class="nav-link" href="/books/about-us">About Us</a></li>
+						<li class="nav-item" data-module="Additional Items"><a class="nav-link" href="/books/contact-us">Contact Us</a></li>
+						<li class="nav-item" data-module="Additional Items"><a class="nav-link" href="/books/distributors">Distributors</a></li>
+						<li class="nav-item" data-module="Additional Items"><a class="nav-link" href="/books/faculty-requests">Faculty Requests</a></li>
+						<li class="nav-item" data-module="Additional Items"><a class="nav-link" href="/books/write-a-book">Write a Book</a></li>
+					</ul>
+				  </nav>
+				  
 			</div>
-			<div class="col-9">
+			<div class="col-12 col-md-9">
 				<div class="row">
 					<div class="col breadcrumbs">
 						breadcrumbs
