@@ -4,6 +4,11 @@
 
 .books-header {
 	background-color: $blue;
+	@include media-breakpoint-only(xs) {
+		& > [class*="col-"] {
+			padding: 0;	
+		}
+	}
 	& .search  {
 		& .input-group {
 			height: 34px;

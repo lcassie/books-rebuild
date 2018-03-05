@@ -1,78 +1,108 @@
-// off canvas menu copied from bootstrap example file
+// off canvas menu copied from bootstrap off canvas project https://iamphill.github.io/Bootstrap-Offcanvas/
 
-html,
-body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
-@media (max-width: 767.98px) {
-  .offcanvas-collapse {
-    position: fixed;
-    top: 56px; /* Height of navbar */
-    bottom: 0;
+@media (max-width: 767px) {
+  .offcanvas-stop-scrolling {
+    height: 100%;
+    overflow: hidden; }
+  .navbar-default .navbar-offcanvas {
+    background-color: #f8f8f8; }
+  .navbar-inverse .navbar-offcanvas {
+    background-color: #222; }
+  .navbar-offcanvas {
+    background-color: $white;
+	position: fixed;
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    background-color: var(--gray-dark);
-    transition: -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  .offcanvas-collapse.open {
-    -webkit-transform: translateX(-1rem);
-    transform: translateX(-1rem); /* Account for horizontal padding on navbar */
-  }
+    max-width: 250px;
+    height: 100%;
+    left: -250px;
+    top: 0;
+    padding: 0;
+    z-index: 999;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    transition: all 0.15s ease-in; }
+    .navbar-offcanvas.in {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+    .navbar-offcanvas.navbar-offcanvas-fade {
+      opacity: 0; }
+      .navbar-offcanvas.navbar-offcanvas-fade.in {
+        opacity: 1; }
+    .navbar-offcanvas.offcanvas-transform.in {
+      -webkit-transform: translateX(250px);
+              transform: translateX(250px); }
+    .navbar-offcanvas.offcanvas-position.in {
+      left: 0; }
+    .navbar-offcanvas.navbar-offcanvas-right {
+      left: auto;
+      right: -250px; }
+      .navbar-offcanvas.navbar-offcanvas-right.offcanvas-transform.in {
+        -webkit-transform: translateX(-250px);
+                transform: translateX(-250px); }
+      .navbar-offcanvas.navbar-offcanvas-right.offcanvas-position.in {
+        left: auto;
+        right: 0; }
+    .navbar-offcanvas .dropdown.open .caret {
+      border-top: 0;
+      border-bottom: 4px solid; }
+    .navbar-offcanvas .dropdown-menu {
+      position: relative;
+      width: 100%;
+      border: inherit;
+      box-shadow: none;
+      transition: height 0.15s ease-in; }
+      .navbar-offcanvas .dropdown-menu.shown {
+        display: block;
+        margin-bottom: 10px; } 
 }
-
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
+button.offcanvas-toggle {
+	background: transparent;
+	padding: 2px 6px;
+	border: none;
+	& .fa-bars {
+  		color: $white;
+		font-size:1.2em;
+  		transition: all .25s ease-in-out; 
+	}
 }
-
-.nav-scroller .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  color: rgba(255, 255, 255, .75);
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+#off-canvas-accordion .card {
+	border: none;
+	border-radius: 0;
+	& .card-header {
+		padding: 0;
+		background-color: $white;
+		border-bottom: 1px solid $blue;
+		border-radius: 0;
+		& > a {
+			padding: 0.5em 0.75em;
+			color: $blue;
+			display: block;
+			&:hover {
+				text-decoration: none;
+			}
+			& .fa-chevron-down {
+				align-self: center;
+			}
+			
+		}
+	}
+	& .card-body {
+		padding: 0;
+		background-color: #dcf0fc;
+		& ul.list-unstyled {
+			padding: 0;
+			margin: 0;
+			& li {
+				border-bottom: 1px solid $gray-400;
+				& a {
+					display: block;
+					font-size: 16px;
+					color: $blue;
+					padding: 0.25em 0.75em;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 }
-
-.nav-underline .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: .875rem;
-  color: var(--secondary);
-}
-
-.nav-underline .nav-link:hover {
-  color: var(--blue);
-}
-
-.nav-underline .active {
-  font-weight: 500;
-  color: var(--gray-dark);
-}
-
-.text-white-50 { color: rgba(255, 255, 255, .5); }
-
-.bg-purple { background-color: var(--purple); }
-
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
-
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-
-.lh-100 { line-height: 1; }
-.lh-125 { line-height: 1.25; }
-.lh-150 { line-height: 1.5; }
-
