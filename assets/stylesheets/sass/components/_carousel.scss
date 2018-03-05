@@ -2,3 +2,22 @@
 // Carousel
 // --------------------------------------------------
 
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 5%;
+    opacity: 1;
+}
+.carousel-control-prev .fa-angle-left, 
+.carousel-control-next .fa-angle-right {
+	font-size: 3em;
+    color: $gray-700;
+}
+.carousel-indicators {
+	bottom: 0;
+	& li {
+		border-radius: 12px;
+		width: 12px;
+		height: 12px;
+		background-color: $gray-700;
+	}
+}

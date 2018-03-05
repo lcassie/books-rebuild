@@ -7402,6 +7402,24 @@ a.text-dark:hover, a.text-dark:focus {
     color: #767676;
     font-size: 0.75rem; }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 1; }
+
+.carousel-control-prev .fa-angle-left,
+.carousel-control-next .fa-angle-right {
+  font-size: 3em;
+  color: #666666; }
+
+.carousel-indicators {
+  bottom: 0; }
+  .carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #666666; }
+
 .books-sidebar-nav {
   margin-left: -15px;
   /*counters the padding on col*/
