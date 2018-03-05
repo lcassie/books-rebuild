@@ -83,6 +83,53 @@
 	}
 	& .footer-columns {
 		padding: 30px 0 100px; /*extra bottom padding so blb ad doesn't overlap links*/
+		& .footer-newswire-signup {
+			display: flex;
+			flex-flow: column nowrap;
+			width: 25%;
+			height: 100%;
+			margin: 0 20px;
+			background-color: #919191;
+			padding: 10px;
+		    & .newswire-box {
+				padding: 20px 14px 12px;
+				border: 1px solid #FFF;
+				& h5 {
+					font-size: 18px;
+					font-weight: bold;
+					margin: 0 0 8px;
+					padding: 0;
+					text-transform: uppercase;
+					color: #FFF;
+					line-height: 1.2em;
+					white-space: normal;
+				}
+				& p {
+					color: #FFF;
+					line-height: 1.2em;
+				}
+				& .form-group {
+					margin-bottom: 8px;
+					& label {
+						display: none;
+					}
+					& .form-control {
+						border-radius: 0;
+						padding: 4px 8px;
+					}
+					& .btn-primary {
+						background-color: #444444;
+						border-color: transparent;
+					}
+					& .btn-primary:hover,
+					& .btn-primary:active,
+					& .btn-primary:focus {
+						background-color: #777777;
+						border-color: transparent;
+					}
+				}
+			}
+		}
 		& .list-unstyled li {
 			font-size: 0.875em;
 			margin-bottom: 0.375rem;
