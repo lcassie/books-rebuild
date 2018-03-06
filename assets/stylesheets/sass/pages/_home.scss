@@ -2,4 +2,36 @@
 // Home
 // --------------------------------------------------
 
-
+.featured-book-list h3 {
+	font-size: 1.5rem;
+	line-height: 1.2em;
+	font-weight: bold;
+	@include media-breakpoint-only(xs) {
+		margin-top: 12px !important;
+	}
+}
+.featured-book-list .card-deck {
+	margin-right: -5px;
+    margin-left: -5px;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	@include media-breakpoint-only(xl) { 
+		align-items: flex-end;
+	}
+	& .card {
+		border: none;
+		border-radius: 0;
+		flex: 1 0 auto;
+		max-width: calc(50% - 20px);
+		@include media-breakpoint-between(sm, xl) { 
+			max-width: calc(33.333% - 20px);
+		}
+		@include media-breakpoint-only(xl) { 
+			max-width: calc(16.66667% - 20px);
+		}
+		& img.card-img-top {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+	}
+}

@@ -2,6 +2,12 @@
 // Carousel
 // --------------------------------------------------
 
+#carousel-slack-books {
+	margin-bottom: 50px;
+	@include media-breakpoint-between(sm, xl) { 
+		margin-bottom: 30px;
+	}
+}
 .carousel-control-prev, 
 .carousel-control-next {
     width: 5%;
@@ -11,13 +17,24 @@
 .carousel-control-next .fa-angle-right {
 	font-size: 3em;
     color: $gray-700;
+	@include media-breakpoint-between(sm, xl) { 
+		font-size: 2em;
+	}
 }
 .carousel-indicators {
 	bottom: 0;
+	@include media-breakpoint-between(sm, xl) { 
+		bottom: -10px;
+	}
 	& li {
 		border-radius: 12px;
 		width: 12px;
 		height: 12px;
 		background-color: $gray-700;
+		@include media-breakpoint-between(sm, xl) { 
+			border-radius: 10px;
+			width: 10px;
+			height: 10px;
+		}
 	}
 }
