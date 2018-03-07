@@ -3,6 +3,11 @@
 // --------------------------------------------------
 
 //desktop sidebar nav
+.navbar-expand-md {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .books-sidebar-nav {
     margin-left: -15px; /*counters the padding on col*/
     padding: 0.5rem 0;
@@ -53,9 +58,10 @@
 			font-size: 10px;
 		}
 	}
-	& li+li:before {
+	& .breadcrumb-item + .breadcrumb-item::before {
 		color: $gray-300;
 		content: "> ";
-		padding: 0 5px;
+        padding: 0 5px;
+        font-size: 10px;
 	}
 }
