@@ -2,3 +2,32 @@
 // Content
 // --------------------------------------------------
 
+.books-category-header h1 {
+	font-size: 1.75rem;
+    line-height: 1.3em;
+	font-weight: bold;
+}
+.books-list-item {
+	& h4 {
+		font-size: 1rem;
+		font-weight: bold;
+		line-height: 1.4em;
+		color: #034792;
+		& a {
+			color: #034792;
+			text-decoration: none;
+		}
+	}
+	& p.book-list-author {
+		font-size: 0.875rem;
+		font-weight: normal;
+		color: $gray-700;
+		line-height: 1.4em;
+	}
+	& a.btn-warning {
+		background-color: #ffe34e;
+		color: $black;
+		border-color: #d6d6d6;
+		font-size: 0.75rem;
+	}
+}
