@@ -11,6 +11,10 @@
 .books-sidebar-nav {
     margin-left: -15px; /*counters the padding on col*/
     padding: 0.5rem 0;
+    flex: 1;
+    & ul.navbar-nav {
+     flex-basis: 100%; /*forces column full width*/   
+    }
     & li.nav-item {
         & > a.nav-link {
             padding: 2px 3px;
