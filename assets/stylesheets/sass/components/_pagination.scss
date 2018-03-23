@@ -2,3 +2,11 @@
 // Pagination
 // --------------------------------------------------
 
+.books-list-pager {
+	padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+	& ul {
+		justify-content: center;
+	}
+}
