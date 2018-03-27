@@ -12,6 +12,9 @@
     margin-left: -15px; /*counters the padding on col*/
     padding: 0.5rem 0;
     flex: 1;
+	@media (min-width: 768px) and (max-width: 1199px) {
+		margin-top: 140px; /*move nav down so breadcrumbs and tlb ad can go full width*/
+	}
     & ul.navbar-nav {
      flex-basis: 100%; /*forces column full width*/   
     }
@@ -29,6 +32,10 @@
                 color: $blue;
             }
         }
+		&.active > a.nav-link {
+			background-color: #e3e3e3;
+            color: $blue;
+		}
     }
     & li.nav-category {
         background-color: $gray-700;
@@ -54,6 +61,12 @@
 	padding: 4px 0;
 	background-color: $white;
 	line-height: 1em;
+	@media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+		margin-left: -23.5%;
+	}
+	@media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+		margin-left: -175px;
+	}
 	& li {
 		display: inline-block;
 		& a {

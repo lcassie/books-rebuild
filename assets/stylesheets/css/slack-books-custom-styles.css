@@ -7438,6 +7438,16 @@ a.text-dark:hover, a.text-dark:focus {
     color: #767676;
     font-size: 0.75rem; }
 
+.ad-unit.tlb > div {
+  margin: 0 auto;
+  text-align: center; }
+  @media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+    .ad-unit.tlb > div {
+      margin-left: -154px; } }
+  @media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+    .ad-unit.tlb > div {
+      margin-left: -19%; } }
+
 #carousel-slack-books {
   margin-bottom: 50px; }
   @media (min-width: 576px) {
@@ -7508,6 +7518,10 @@ a.text-dark:hover, a.text-dark:focus {
   /*counters the padding on col*/
   padding: 0.5rem 0;
   flex: 1; }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .books-sidebar-nav {
+      margin-top: 140px;
+      /*move nav down so breadcrumbs and tlb ad can go full width*/ } }
   .books-sidebar-nav ul.navbar-nav {
     flex-basis: 100%;
     /*forces column full width*/ }
@@ -7521,6 +7535,9 @@ a.text-dark:hover, a.text-dark:focus {
     .books-sidebar-nav li.nav-item > a.nav-link:hover, .books-sidebar-nav li.nav-item > a.nav-link:focus {
       background-color: #e3e3e3;
       color: #005581; }
+  .books-sidebar-nav li.nav-item.active > a.nav-link {
+    background-color: #e3e3e3;
+    color: #005581; }
   .books-sidebar-nav li.nav-category {
     background-color: #666666;
     color: #fff;
@@ -7540,6 +7557,12 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 4px 0;
   background-color: #fff;
   line-height: 1em; }
+  @media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
+    .breadcrumb {
+      margin-left: -23.5%; } }
+  @media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+    .breadcrumb {
+      margin-left: -175px; } }
   .breadcrumb li {
     display: inline-block; }
     .breadcrumb li a {
