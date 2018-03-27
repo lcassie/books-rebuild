@@ -4,7 +4,7 @@
 
 .books-header {
 	background-color: $blue;
-	@include media-breakpoint-only(xs) {
+	@media (max-width: 374px) { /*small phones only*/
 		& > [class*="col-"] {
 			padding: 0;	
 		}
