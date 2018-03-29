@@ -7280,6 +7280,12 @@ a.text-dark:hover, a.text-dark:focus {
     color: #428bca; }
     .books-header .search .mobile-search-btn:hover {
       color: #fff; }
+  .books-header .mobile-search .dropdown-menu {
+    background: #c8c8c8;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 5px 0 0 !important;
+    top: 112px; }
   .books-header a .fa-facebook-square {
     color: #3B5998;
     line-height: 0.9em; }

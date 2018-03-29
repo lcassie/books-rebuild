@@ -172,18 +172,20 @@
 						</div>
 					</div>
 					<div class="col-1 d-block d-md-none">
-						<div class="dropdown show">
+						<div class="mobile-search dropdown show">
 							<!--removing class "dropdown-toggle" hides the caret -->
 							<button class="mobile-search-btn p-2 d-block" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fas fa-lg fa-search"></i>
 							</button>
 							<div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
-								<div class="input-group">
-									<input type="text" class="form-control" placeholder="Search" aria-label="Search" id="msearch">
-									<div class="input-group-append">
-										<button class="btn btn-outline-secondary px-2 py-1" type="button" onclick="(function(){var sp = '/books/search#q='; var q = $j('#msearch').val(); var f = '&amp;f:ContentTypeFacet=[Books]'; window.location.href=sp+q+f; })()"><i class="fas fa-search"></i></button>
+								<form class="px-3 py-1">
+									<div class="input-group dropdown-search">
+										<input type="text" class="form-control" placeholder="Search" aria-label="Search" id="msearch">
+										<div class="input-group-append">
+											<button class="btn btn-outline-secondary px-2 py-1" type="button" onclick="(function(){var sp = '/books/search#q='; var q = $j('#msearch').val(); var f = '&amp;f:ContentTypeFacet=[Books]'; window.location.href=sp+q+f; })()"><i class="fas fa-search"></i></button>
+										</div>
 									</div>
-								</div>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -220,7 +222,7 @@
 						<li class="nav-category nav-item">Medicine</li>
 						<li class="nav-item active" data-module="Medicine"><a class="nav-link" href="/books/gastroenterology">Gastroenterology</a></li>
 						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/ophthalmology">Ophthalmology</a></li>
-						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/ophthalmic-technical-skills" class="indented">Ophthalmic Technical Skills</a></li>
+						<li class="nav-item" data-module="Medicine"><a class="nav-link indented" href="/books/ophthalmic-technical-skills">Ophthalmic Technical Skills</a></li>
 						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/orthopedics">Orthopedics</a></li>
 						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/hepatology">Hepatology</a></li>
 						<li class="nav-item" data-module="Medicine"><a class="nav-link" href="/books/pediatrics">Pediatrics</a></li>
@@ -228,9 +230,9 @@
 						<li class="nav-category nav-item">Health Professions</li>
 						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/athletic-training">Athletic Training</a></li>
 						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/health-professions/occupational-therapy">Occupational Therapy</a></li>
-						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/health-professions/occupational-therapy-assistant" class="indented">Occupational Therapy Assistant</a></li>
+						<li class="nav-item" data-module="Health Professions"><a class="nav-link indented" href="/books/health-professions/occupational-therapy-assistant">Occupational Therapy Assistant</a></li>
 						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/health-professions/physical-therapy">Physical Therapy</a></li>
-						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/health-professions/physical-therapist-assistant" class="indented">Physical Therapist Assistant</a></li>
+						<li class="nav-item" data-module="Health Professions"><a class="nav-link indented" href="/books/health-professions/physical-therapist-assistant">Physical Therapist Assistant</a></li>
 						<li class="nav-item" data-module="Health Professions"><a class="nav-link" href="/books/speech-language-pathology">Speech-Language Pathology</a></li>
 				  
 						<li class="nav-category nav-item">Nursing</li>
