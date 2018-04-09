@@ -2,7 +2,8 @@
 // Content
 // --------------------------------------------------
 
-.books-category-header h1 {
+.books-category-header h1,
+h1.book-title {
 	font-size: 1.75rem;
     line-height: 1.3em;
 	font-weight: bold;
@@ -30,4 +31,14 @@
 		border-color: #d6d6d6;
 		font-size: 0.75rem;
 	}
+}
+p.book-author {
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: $blue;
+}
+.book-cover img.thumbnail {
+	width: 100%;
+	max-width: 200px;
+	height: auto;
 }
