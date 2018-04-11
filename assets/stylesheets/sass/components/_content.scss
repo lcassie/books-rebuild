@@ -39,6 +39,46 @@ p.book-author {
 }
 .book-cover img.thumbnail {
 	width: 100%;
-	max-width: 200px;
+	/* max-width: 200px;*/
 	height: auto;
+}
+.page-thumbs {
+	padding-left: 0;
+	padding-right: 0;
+	& .thumb img {
+		border: 1px solid $gray-300;
+	}
+}
+.book-info .meta-info {
+	color: $gray-500;
+    font-size: 0.875rem;
+	line-height: 1.6em;
+	list-style: none outside none;
+	& li {
+		margin-bottom: 6px;
+	}
+	& li.price {
+		color: $gray-800;
+		font-size: 1.125rem;
+		font-weight: bold;
+	}
+}
+.book-info a.btn-warning {
+    background-color: $yellow;
+    color: $black;
+    border-color: #d6d6d6;
+    font-size: 0.75rem;
+    width: 156px;
+    height: 30px;
+}
+.book-info a.btn-default {
+    background-color: $gray-200;
+    color: $black;
+    border-color: #d6d6d6;
+    font-size: 0.75rem;
+    width: 156px;
+	height: 30px;
+	& .badge-dark {
+		font-size: 100%;
+	}
 }
