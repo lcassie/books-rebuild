@@ -77,3 +77,21 @@ p.book-author {
 		font-size: 100%;
 	}
 }
+.social-share-icons .btn-twitter,
+.social-share-icons .btn-facebook,
+.social-share-icons .btn-linkedin {
+	cursor: pointer;
+}
+.social-share-icons span.tool-text {
+	color: #919191;
+    font-size: 10px;
+	text-decoration: none;
+	border:none;
+}
+.social-share-icons .btn-save span.tool-text {
+	color: #ee9c00;
+	&:hover {
+		color: #ee9c00;
+		text-decoration: none;
+	}
+}
