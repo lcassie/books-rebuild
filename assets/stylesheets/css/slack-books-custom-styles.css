@@ -9329,12 +9329,6 @@ p.book-author {
   color: #005581;
 }
 
-.book-cover img.thumbnail {
-  width: 100%;
-  /* max-width: 200px;*/
-  height: auto;
-}
-
 .page-thumbs {
   padding-left: 0;
   padding-right: 0;
