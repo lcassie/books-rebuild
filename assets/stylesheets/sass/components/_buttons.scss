@@ -1,3 +1,37 @@
 //
 // Buttons
 // --------------------------------------------------
+
+/* cart buttons on product page */
+.cart-btn a.btn-warning {
+	background-color: $yellow;
+    color: $black;
+    border-color: #d6d6d6;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.book-info a.btn-warning {
+    font-size: 0.75rem;
+    width: 156px;
+    height: 30px;
+	padding: 0.375rem 0 0.5rem;
+}
+.book-info a.btn-default {
+    background-color: $gray-200;
+    color: $black;
+    border-color: #d6d6d6;
+    font-size: 0.75rem;
+    width: 156px;
+	height: 30px;
+	& .badge-dark {
+		font-size: 100%;
+	}
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.sidebar-book a.btn-warning {
+    font-size: 0.75rem;
+	font-weight: normal;
+}

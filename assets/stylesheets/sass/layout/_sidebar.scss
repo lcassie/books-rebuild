@@ -1,3 +1,16 @@
 //
 // Sidebar
 // --------------------------------------------------
+
+/**** product page related books sidebar ****/
+.related-sidebar h3 {
+    color: $gray-800;
+    font-size: 1.25rem;
+    font-weight: normal;
+    border-bottom: 1px solid #ababab;
+}
+.sidebar-book a {
+	font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.4em;
+}

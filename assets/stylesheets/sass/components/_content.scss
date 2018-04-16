@@ -58,25 +58,6 @@ p.book-author {
 		font-weight: bold;
 	}
 }
-.book-info a.btn-warning {
-    background-color: $yellow;
-    color: $black;
-    border-color: #d6d6d6;
-    font-size: 0.75rem;
-    width: 156px;
-    height: 30px;
-}
-.book-info a.btn-default {
-    background-color: $gray-200;
-    color: $black;
-    border-color: #d6d6d6;
-    font-size: 0.75rem;
-    width: 156px;
-	height: 30px;
-	& .badge-dark {
-		font-size: 100%;
-	}
-}
 .social-share-icons .btn-twitter,
 .social-share-icons .btn-facebook,
 .social-share-icons .btn-linkedin {
