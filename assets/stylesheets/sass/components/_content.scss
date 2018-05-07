@@ -76,3 +76,16 @@ p.book-author {
 		text-decoration: none;
 	}
 }
+
+/*accordion on product page */
+#books-accordion {
+	& .card-header {
+		background-color: transparent;
+		& h5 button.btn-link {
+			color: $gray-800;
+			font-size: 1.25rem;
+			font-weight: bold;
+			width: 100%;
+		}
+	}
+}
