@@ -7600,13 +7600,18 @@ p.book-author {
     text-decoration: none; }
 
 /*accordion on product page */
-#books-accordion .card-header {
-  background-color: transparent; }
-  #books-accordion .card-header h5 button.btn-link {
-    color: #333333;
-    font-size: 1.25rem;
-    font-weight: bold;
-    width: 100%; }
+#booksAccordion .card {
+  background-color: #fff;
+  border: none;
+  border-radius: 0; }
+  #booksAccordion .card .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid #ababab; }
+    #booksAccordion .card .card-header h5 button.btn-link {
+      color: #333333;
+      font-size: 1.25rem;
+      font-weight: bold;
+      width: 100%; }
 
 .bookcover-modal .modal-header {
   padding: 0.25rem 0.5rem;
