@@ -16,6 +16,9 @@
     width: 156px;
     height: 30px;
 	padding: 0.375rem 0 0.5rem;
+	@include media-breakpoint-only(xs) {
+		width: 80%;
+	}
 }
 .book-info a.btn-default {
     background-color: $gray-200;
@@ -24,12 +27,21 @@
     font-size: 0.75rem;
     width: 156px;
 	height: 30px;
+	@include media-breakpoint-only(xs) {
+		width: 80%;
+	}
 	& .badge-dark {
 		font-size: 100%;
 	}
 	&:hover {
 		opacity: 0.8;
 	}
+}
+.books-list-item a.btn-warning {
+	background-color: $yellow;
+	color: $black;
+	border-color: #d6d6d6;
+	font-size: 0.75rem;
 }
 .sidebar-book a.btn-warning {
     font-size: 0.75rem;

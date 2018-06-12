@@ -7,6 +7,9 @@ h1.book-title {
 	font-size: 1.75rem;
     line-height: 1.3em;
 	font-weight: bold;
+	@include media-breakpoint-only(xs) {
+		font-size: 1.5rem;
+	}
 }
 .books-list-item {
 	& h4 {
@@ -24,12 +27,6 @@ h1.book-title {
 		font-weight: normal;
 		color: $gray-700;
 		line-height: 1.4em;
-	}
-	& a.btn-warning {
-		background-color: $yellow;
-		color: $black;
-		border-color: #d6d6d6;
-		font-size: 0.75rem;
 	}
 }
 p.book-author {
@@ -58,6 +55,11 @@ p.book-author {
 		font-weight: bold;
 	}
 }
+.social-share-icons .fa-lg {
+	@include media-breakpoint-only(xs) {
+		font-size: 1.5em;
+	}
+}
 .social-share-icons .btn-twitter,
 .social-share-icons .btn-facebook,
 .social-share-icons .btn-linkedin {
@@ -68,6 +70,9 @@ p.book-author {
     font-size: 10px;
 	text-decoration: none;
 	border:none;
+	@include media-breakpoint-only(xs) {
+		font-size: 11px;
+	}
 }
 .social-share-icons .btn-save span.tool-text {
 	color: #ee9c00;
